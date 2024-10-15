@@ -204,16 +204,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       />
                       <p className="ml-3 whitespace-nowrap text-grey-600">Start Date:</p>
                       <DatePicker 
-<<<<<<< HEAD
-                       selected={field.value}
-                       onChange={(date: Date | null) => field.onChange(date)}  // Accept Date or null
-                       showTimeSelect
-                      timeInputLabel="Time:"
-                      dateFormat="MM/dd/yyyy h:mm aa"
-                       wrapperClassName="datePicker"
-/>
-
-=======
                         selected={field.value} 
                         onChange={(date: Date) => field.onChange(date)} 
                         showTimeSelect
@@ -221,7 +211,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                         dateFormat="MM/dd/yyyy h:mm aa"
                         wrapperClassName="datePicker"
                       />
->>>>>>> fdbd7d2814a702dd75cbf641692c67bb6999a2ba
                     </div>
 
                   </FormControl>
@@ -246,16 +235,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       />
                       <p className="ml-3 whitespace-nowrap text-grey-600">End Date:</p>
                       <DatePicker 
-<<<<<<< HEAD
-                        selected={field.value}
-                         onChange={(date: Date | null) => field.onChange(date)}  // Allow Date or null
-                         showTimeSelect
-                         timeInputLabel="Time:"
-                         dateFormat="MM/dd/yyyy h:mm aa"
-                          wrapperClassName="datePicker"
-                         />
-
-=======
                         selected={field.value} 
                         onChange={(date: Date) => field.onChange(date)} 
                         showTimeSelect
@@ -263,7 +242,6 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                         dateFormat="MM/dd/yyyy h:mm aa"
                         wrapperClassName="datePicker"
                       />
->>>>>>> fdbd7d2814a702dd75cbf641692c67bb6999a2ba
                     </div>
 
                   </FormControl>

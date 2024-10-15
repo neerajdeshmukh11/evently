@@ -1,30 +1,16 @@
-<<<<<<< HEAD
-"use client"
-=======
->>>>>>> fdbd7d2814a702dd75cbf641692c67bb6999a2ba
 import Collection from '@/components/shared/Collection'
 import { Button } from '@/components/ui/button'
 import { getEventsByUser } from '@/lib/actions/event.actions'
 import { getOrdersByUser } from '@/lib/actions/order.actions'
 import { IOrder } from '@/lib/database/models/order.model'
 import { SearchParamProps } from '@/types'
-<<<<<<< HEAD
-import { useAuth } from '@clerk/nextjs'
-=======
 import { auth } from '@clerk/nextjs'
->>>>>>> fdbd7d2814a702dd75cbf641692c67bb6999a2ba
 import Link from 'next/link'
 import React from 'react'
 
 const ProfilePage = async ({ searchParams }: SearchParamProps) => {
-<<<<<<< HEAD
-  const { userId }:{userId:any} = useAuth();
-  // // const userId = "sessionClaims?.userId as string;"
-  // const userId = sessionClaims?.userId as string;
-=======
   const { sessionClaims } = auth();
   const userId = sessionClaims?.userId as string;
->>>>>>> fdbd7d2814a702dd75cbf641692c67bb6999a2ba
 
   const ordersPage = Number(searchParams?.ordersPage) || 1;
   const eventsPage = Number(searchParams?.eventsPage) || 1;
